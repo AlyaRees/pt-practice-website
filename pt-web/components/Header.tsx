@@ -15,7 +15,7 @@ export function Header() {
           <div className="flex pr-6">
           <Image className="w-10 lg:w-10" src="/placeholderLogo.svg" alt="logo" width={40} height={15} />
           </div>
-          <div className="w-full flex justify-center md:justify-between">
+          <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
           <Link href="/" className="text-xl">
             ArcherMan<span className="font-normal">Fitness</span>
           </Link>
@@ -54,7 +54,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="fixed top-15 left-1/2 -translate-x-1/2 md:hidden bg-foreground py-6">
+          <div className="fixed z-50 top-15 left-1/2 -translate-x-1/2 md:hidden bg-foreground py-10">
 
             <nav className="flex flex-col items-center gap-4 text-sm text-white md:px-9 px-40">
               <Link
