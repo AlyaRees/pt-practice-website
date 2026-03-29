@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative w-full flex items-center justify-center py-30">
+    <section className="relative w-full flex items-center justify-center py-30 text-white">
       {/* Background Image */}
         <Image
-          src="/luxurious-gym-interior-stock_image.webp"
+          src="/ambitious-studio-rick-barrett-w7jYaN7GqyA-unsplash.jpg"
           alt="gym-interior"
           fill
           className="object-cover"
