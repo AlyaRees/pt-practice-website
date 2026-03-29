@@ -10,19 +10,21 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full flex items-center md:h-20 bg-black justify-between text-white px-6 m-auto">
+    <header className="w-full flex items-center h-15 md:h-20 bg-black justify-between text-white px-6 m-auto">
         <div className="w-full flex items-center gap-2">
           <div className="flex pr-6">
           <Image className="w-10 lg:w-10" src="/placeholderLogo.svg" alt="logo" width={40} height={15} />
           </div>
+          <div className="w-full flex justify-center md:justify-between">
           <Link href="/" className="text-xl">
             ArcherMan<span className="font-normal">Fitness</span>
           </Link>
           </div>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex pr-10">
-          <nav className="flex text-sm gap-6">
+          <nav className="flex text-sm gap-8">
             <Link href="#work">Home</Link>
             <Link href="#services">Services</Link>
             <Link href="#about">About</Link>
