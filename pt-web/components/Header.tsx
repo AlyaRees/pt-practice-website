@@ -10,33 +10,32 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-black text-white">
-      <div className="md:px-6 pt-6 md:pt-0">
-        <div className="flex items-center justify-center md:justify-between md:h-20">
+    <header className="w-full flex items-center md:h-20 bg-black justify-between text-white px-6 m-auto">
+        <div className="w-full flex items-center gap-2">
+          <div className="flex pr-6">
           <Image className="w-10 lg:w-10" src="/placeholderLogo.svg" alt="logo" width={40} height={15} />
-          <Link href="/" className="text-xl px-10">
+          </div>
+          <Link href="/" className="text-xl">
             ArcherMan<span className="font-normal">Fitness</span>
           </Link>
+          </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-10 text-sm ml-auto pr-20">
+          <div className="hidden md:flex pr-10">
+          <nav className="flex text-sm gap-6">
             <Link href="#work">Home</Link>
             <Link href="#services">Services</Link>
             <Link href="#about">About</Link>
             <Link href="#contact">Contact</Link>
           </nav>
+          </div>
 
           {/* Social Icons + Contact Button */}
-          <div>
-              <Link href="#"></Link>
-              <Link href="#"></Link>
-              <Link href="#"></Link>
-            <span className="hidden md:flex gap-6 justify-center">
+            <span className="hidden md:flex gap-6">
                 <FaInstagram size={24}/>
                 <FaFacebook size={24}/>
                 <FaTwitter size={24}/>
             </span>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -44,54 +43,45 @@ export function Header() {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-4 w-4" />
+              <X className="h-6 w-6 md:hidden" />
             ) : (
               <Menu className="h-6 w-6 md:hidden" />
             )}
           </button>
-        </div>
+        
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t py-4">
-            <nav className="flex flex-col gap-6 text-white">
+          <div className="fixed top-15 left-1/2 -translate-x-1/2 md:hidden bg-foreground py-6">
+
+            <nav className="flex flex-col items-center gap-4 text-sm text-white md:px-9 px-40">
               <Link
-                href="#services"
-                className="text-sm"
+                href="#home"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="#services"
-                className="text-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="#about"
-                className="text-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="#contact"
-                className="text-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
             </nav>
-            <div className="flex items-center gap-4 mt-6 pt-2 border-t">
-              <Link href="#"></Link>
-              <Link href="#"></Link>
-              <Link href="#"></Link>
-            </div>
           </div>
         )}
-      </div>
     </header>
   );
 }

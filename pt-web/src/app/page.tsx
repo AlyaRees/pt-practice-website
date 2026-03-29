@@ -1,11 +1,13 @@
 import Image from "next/image"
 import { Header } from "../../components/Header";
+import { Hero } from "../../components/Hero";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
+    <div className="flex flex-col flex-1 justify-center bg-black">
         <Header />
+        <Hero />
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl leading-10 tracking-tight text-white dark:text-zinc-50">
             To get started, edit the page.tsx file.
