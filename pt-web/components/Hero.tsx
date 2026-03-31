@@ -11,6 +11,7 @@ export function Hero() {
           alt="gym-interior"
           width={1920}
           height={1280}
+          loading="eager"
           className="w-full max-h-[80vh] object-cover"
         />
     </section>
