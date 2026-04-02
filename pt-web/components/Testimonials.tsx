@@ -7,7 +7,7 @@ export function Testimonials() {
   return (
     <section id="work" className="py-24 md:py-15 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-15 md:mb-8">
           <p className="text-sm uppercase tracking-widest text-muted-foreground mb-3">
             Client testimonials
           </p>
@@ -44,7 +44,7 @@ export function Testimonials() {
               unmatched.&quot;
             </blockquote>
               <div>
-                <p className="flex items-center gap-4 font-semibold py-4 ">- Michael Thompson</p>
+                <p className="flex items-center gap-4 font-semibold py-4">- Michael Thompson</p>
             </div>
           </div>
           <div className="relative aspect-[4/3]">
