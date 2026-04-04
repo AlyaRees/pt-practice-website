@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+{/* test push */}
+
 export function About() {
   return (
     <section id="about" className="py-24 md:py-32 text-white">
