@@ -2,6 +2,10 @@ To set up all memebers of the team:
 
 Install the following dependencies...
 
+First make sure node.js is installed on the machine.
+
+Then install all the node_modules.
+
 ```
 npm install
 ```
