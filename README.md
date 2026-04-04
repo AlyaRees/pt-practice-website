@@ -2,7 +2,7 @@ To set up all memebers of the team:
 
 Install the following dependencies...
 
-'''
+```
 
 npm install
 
@@ -10,4 +10,4 @@ npm install
 
 npm install lucide-react
 
-'''
+```
