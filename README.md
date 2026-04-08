@@ -15,3 +15,11 @@ npm install
 ```
 npm install lucide-react
 ```
+Testing
+
+Navigate to the correct directory before installing jest. 
+
+Follow the instructions on this page for 'Manual setup'.
+
+[text](https://nextjs.org/docs/app/guides/testing/jest)
+
