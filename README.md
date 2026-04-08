@@ -21,5 +21,5 @@ Navigate to the correct directory before installing jest.
 
 Follow the instructions on this page for 'Manual setup'.
 
-[text](https://nextjs.org/docs/app/guides/testing/jest)
+[Next.js and Jest installation](https://nextjs.org/docs/app/guides/testing/jest)
 
