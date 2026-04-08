@@ -10,10 +10,10 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full flex items-center h-15 md:h-20 bg-black justify-between text-white px-6 m-auto">
+    <header data-testid={"home-navbar"} className="w-full flex items-center h-15 md:h-20 bg-black justify-between text-white px-6 m-auto">
         <div className="w-full flex items-center gap-2">
           <div className="flex pr-6">
-          <Image className="w-10 lg:w-10" src="/placeholderLogo.svg" alt="logo" width={40} height={15} />
+          <Image data-testid={"navbar-logo"} className="w-10 lg:w-10" src="/placeholderLogo.svg" alt="logo" width={40} height={15} />
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
           <Link href="/" className="text-xl">
@@ -45,16 +45,16 @@ export function Header() {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 md:hidden" />
+              <X data-testid={"cross-icon"} className="h-6 w-6 md:hidden" />
             ) : (
-              <Menu className="h-6 w-6 md:hidden" />
+              <Menu data-testid={"hamburger-logo"} className="h-6 w-6 md:hidden" />
             )}
           </button>
         
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="fixed z-50 top-15 left-1/2 -translate-x-1/2 md:hidden bg-foreground py-10">
+          <div data-testid={"dropdown"} className="fixed z-50 top-15 left-1/2 -translate-x-1/2 md:hidden bg-foreground py-10">
 
             <nav className="flex flex-col items-center gap-4 text-sm text-white md:px-9 px-40">
               <Link
