@@ -10,10 +10,10 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header data-testid={"home-navbar"} className="w-full flex items-center h-15 md:h-20 bg-black justify-between text-white px-6 m-auto">
+    <header className="w-full flex items-center h-15 md:h-20 bg-black justify-between text-white px-6 m-auto">
         <div className="w-full flex items-center gap-2">
           <div className="flex pr-6">
-          <Image data-testid={"navbar-logo"} className="w-10 lg:w-10" src="/placeholderLogo.svg" alt="logo" width={40} height={15} />
+          <Image className="w-10 lg:w-10" src="/placeholderLogo.svg" alt="company logo" width={40} height={15} />
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
           <Link href="/" className="text-xl">
@@ -34,9 +34,9 @@ export function Header() {
 
           {/* Social Icons + Contact Button */}
             <span className="hidden md:flex gap-6">
-                <FaInstagram size={24}/>
-                <FaFacebook size={24}/>
-                <FaTwitter size={24}/>
+                <FaInstagram data-testid={"instagram-icon"} size={24}/>
+                <FaFacebook data-testid={"facebook-icon"} size={24}/>
+                <FaTwitter data-testid={"twitter-icon"} size={24}/>
             </span>
 
           {/* Mobile Menu Button */}
